@@ -1,0 +1,95 @@
+/* removes overlay */
+#preload {
+	display: none;
+}
+img {
+	display: unset !important;
+}
+
+#embedded {
+	display: none;
+	position: fixed;
+	background-color: #e8e0d8;
+	top: 0px; left: 0px; right: 0px; bottom: 0px;
+	z-index: 10000;
+	text-align: center;
+	cursor: pointer;
+}
+
+#embedded_back {
+	background-image: url("");
+	background-repeat: no-repeat no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+#embedded #preload_title {
+	color: black;
+	padding-bottom: 1vh;
+}
+#embedded_cap {
+	color: dimgray;
+	font-size: 14pt;
+}
+
+@font-face {
+  font-family: 'HN';
+  font-style: normal;
+  font-weight: 200;
+  src: url('Gotham-Bold.ttf');
+}
+
+@font-face {
+    font-family: "oem";
+    src: url('PFDinTextOS-Regular.ttf');
+}
+
+@font-face {
+    font-family: "oem";
+    src: url('PFDinTextOS-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "oem";
+    src: url('PFDinTextOS-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "oemcond";
+    src: url('PFDinTextOSCond-Regular.ttf');
+}
+
+@font-face {
+    font-family: "oemcond";
+    src: url('PFDinTextOSCond-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "eur";
+    src: url('Eurostile-Reg.otf');
+}
+@font-face {
+    font-family: "eur";
+    src: url('Eurostile-Bol.otf');
+    font-weight: bold;
+}
+
+body {
+	font-family: "oem", serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+}
+
+#vcdtitle {
+	table, th, td { border: 1px solid black; border-collapse: collapse; }
+}
